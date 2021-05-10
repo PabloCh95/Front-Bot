@@ -27,6 +27,12 @@ const routes=[
             exact: true
           }
       ]
-   },{
+   },
+   {
+       path:'/',
+       component:LayoutHome,
+       exact:false
+   }
+]
 
-   }]
+export default routes;
