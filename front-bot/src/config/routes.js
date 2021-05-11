@@ -22,9 +22,9 @@ const routes=[
               exact: true
           },
           {
-            path:"/admin/login",
-            component: Login,
-            exact: true
+              path:"/admin/login",
+              component: Login,
+              exact: true
           }
       ]
    },
