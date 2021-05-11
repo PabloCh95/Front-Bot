@@ -8,6 +8,8 @@ import Login from '../pages/Admin/Login/Index.js';
 
 //home pages
 import Home from '../pages/Home.js';
+
+//others
 import Error404 from '../pages/Error404.js';
 
 const routes=[
@@ -25,13 +27,26 @@ const routes=[
               path:"/admin/login",
               component: Login,
               exact: true
+          },
+          {
+              component:Error404,
           }
       ]
    },
    {
        path:'/',
        component:LayoutHome,
-       exact:false
+       exact:false,
+       routes:[
+           {
+            path:'/',
+            component:Home,
+            exact:true,
+           },
+           {
+              component:Error404,
+           }
+       ],
    }
 ]
 
